@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #19a2ae;
+  line-height: 1;
+}
+
+main {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card-container {
+  max-width: 35rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+}
+
+.hero-section {
+  background-image: url("../images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  height: 14rem;
+  width: 35rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 7.2rem;
+}
+
+.profile-img {
+  position: relative;
+  height: 9.6rem;
+  width: 9.6rem;
+  top: 8.3rem;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 2.4rem;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8.5px;
+  margin-bottom: 8px;
+}
+
+.profile-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.23rem;
+  color: #2e3349;
+}
+
+.profile-age {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.23rem;
+  color: #6b7082;
+}
+
+.profile-city {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.73rem;
+  color: #6b7082;
+  margin-bottom: 2.8rem;
+}
+
+.social-media {
+  display: flex;
+  gap: 4.6rem;
+  padding: 2.3rem 5.4rem 2.4rem 4.7rem;
+  border-top: 1px solid #e8e9ec;
+}
+
+.social-media p:first-child {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2e3349;
+  line-height: 2.23rem;
+  text-align: center;
+  margin-bottom: 9px;
+}
+
+.social-media p:last-child {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.24rem;
+  letter-spacing: 1.5px;
+  color: #6b7082;
+  text-align: center;
+}
+
+.likes {
+  padding-right: 8px;
+}
+
+.upper-bg {
+  position: absolute;
+  height: 65%;
+  width: 48%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url("../images/bg-pattern-top.svg") no-repeat bottom right;
+}
+
+.lower-bg {
+  position: absolute;
+  height: 50%;
+  width: 100vw;
+  top: 50%;
+  background: url("../images/bg-pattern-bottom.svg") no-repeat;
+  background-position-x: 50vw;
+  z-index: -1;
+}
+
+@media all and (max-width: 23.5em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .profile-card-container {
+    max-width: 32.6rem;
+  }
+
+  .hero-section {
+    height: 14rem;
+    width: 32.6rem;
+  }
+
+  .profile-img {
+    height: 9.6rem;
+    width: 9.6rem;
+  }
+
+  .social-media {
+    padding: 2.4rem 5.2rem 2.4rem 4.1rem;
+    gap: 3.8rem;
+  }
+}
